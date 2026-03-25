@@ -13,12 +13,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/attendance" element={<Attendance />} />
-        <Route path="/appointments" element={<Appointments />} />
-        <Route path="/doctor" element={<Doctor />} />
-        <Route path="/employee" element={<Employee />} />
         <Route path="/patient" element={<Patients />} />
         <Route path="/patient-list" element={<PatientList />} />
+        <Route path="/doctor" element={<Doctor />} />
+        <Route path="/attendance" element={<Attendance />} />
+        <Route path="/employee" element={<Employee />} />
+        <Route path="/appointments" element={<Appointments />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </BrowserRouter>

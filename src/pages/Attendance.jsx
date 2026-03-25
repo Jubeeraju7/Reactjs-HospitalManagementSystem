@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import axios from "axios";
-import Layout from "./layout";
+import Layout from "./Layout";
 
 const AttendancePage = () => {
   const [employees, setEmployees] = useState([]);
@@ -51,7 +51,7 @@ const AttendancePage = () => {
 
   return (
     <Layout>
-      <div style={{ padding: "30px" }}>
+      <div style={{ padding: "120px", textAlign : "left" }}>
         <h2>Daily Attendance</h2>
 
         {/* 🔹 Divider */}
@@ -88,7 +88,7 @@ const AttendancePage = () => {
             <label style={label}>Date</label>
             <input
               type="date"
-              style={inputStyle}
+              style={dateStyle}
               onChange={(e) => setDate(e.target.value)}
             />
           </div>
@@ -152,7 +152,6 @@ const AttendancePage = () => {
                     }
                   />
                 </td>
-
                 <td style={td}>
                   <select
                     value={emp.status}
@@ -193,6 +192,7 @@ const filterContainer = {
   marginBottom: "20px",
   alignItems: "flex-end",
   flexWrap: "wrap",
+  textalign :"left"
 };
 
 const field = {
@@ -206,12 +206,21 @@ const label = {
 };
 
 const inputStyle = {
-  width: "220px",
+  width: "240px",
   height: "50px",
   padding: "10px",
   border: "1px solid #ccc",
   borderRadius: "6px",
 };
+
+const dateStyle = {
+  width: "220px",
+  height: "30px",
+  padding: "10px",
+  border: "1px solid #ccc",
+  borderRadius: "6px",
+};
+
 
 const btnStyle = {
   height: "35px",
@@ -220,6 +229,7 @@ const btnStyle = {
   color: "#fff",
   border: "none",
   borderRadius: "6px",
+  textalign :"center"
 };
 
 const tableStyle = {

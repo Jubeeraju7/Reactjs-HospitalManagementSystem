@@ -2,14 +2,13 @@ import { Link } from "react-router-dom";
 
 const Layout = ({ children }) => {
   return (
-    <div style={{ display: "flex" }}>
-      
+    <div style={{ display: "flex", }}>
       {/* 🔹 Drawer */}
       <div
         style={{
           width: "220px",
           background: "#1e293b",
-          padding: "20px",
+          padding: "50px",
           display: "flex",
           flexDirection: "column",
           gap: "15px",
@@ -19,7 +18,7 @@ const Layout = ({ children }) => {
       >
         <h2 style={{ color: "#fff" }}>🩺Welcome, Dr. Paul</h2>
 
-        <Link to="/overview" style={link}>Overview</Link>
+        <Link to="/" style={link}>Dashboard</Link>
         <Link to="/patient" style={link}>My Patients</Link>
         <Link to="/doctor" style={link}>Doctor</Link>
         <Link to="/employee" style={link}>Employee</Link>
@@ -33,7 +32,7 @@ const Layout = ({ children }) => {
         style={{
           marginLeft: "220px",
           width: "100%",
-          padding: "20px",
+        //  padding: "20px",
         }}
       >
         {children}
